@@ -6,7 +6,7 @@ import os
 
 def afficher_l_image(fichier):
         global image
-        image = PhotoImage(file=os.path.dirname(__file__) + '/' + fichier)
+        image = PhotoImage(file=os.path.dirname(os.path.realpath(__file__)) + '/' + fichier)
         canvas.delete(ALL)
         canvas.create_image(0, 0, anchor=NW, image=image)
         tk.update()
