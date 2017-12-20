@@ -11,6 +11,8 @@ def afficher_l_image(fichier):
         canvas.create_image(0, 0, anchor=NW, image=image)
         tk.update()
 
+# variables
+
 tk = Tk()
 image = ""
 canvas = Canvas(tk, width=400, height=400)
@@ -22,11 +24,15 @@ mot_a_deviner = "_"
 mot_a_afficher = ""
 longueur_du_mot = ""
 
+# début : le joueur 1 entre le mot à faire deviner
+
 mot_a_deviner = input("Entrez le mot à faire deviner :")
 lettres_restantes = mot_a_deviner
 longueur_du_mot = len(mot_a_deviner)
 for x in range(50):
         print()
+
+# le joueur 2 essaie de trouver le mot
         
 print("Mot en ", longueur_du_mot, " lettres.")
 while(nombre_de_vies != 0) and (lettres_restantes != ""):
