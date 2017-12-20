@@ -31,7 +31,7 @@ for x in range(50):
 print("Mot en ", longueur_du_mot, " lettres.")
 while(nombre_de_vies != 0) and (lettres_restantes != ""):
         mot_a_afficher = mot_a_deviner
-        for lettre in qlettres_restantes:
+        for lettre in lettres_restantes:
                 mot_a_afficher = mot_a_afficher.replace (lettre, " _ ")
         print(mot_a_afficher)
         réponse_joueur_2 = input("Entrez une lettre :")
